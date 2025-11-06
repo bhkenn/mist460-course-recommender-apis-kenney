@@ -26,7 +26,7 @@ def get_db_connection():
             f'DATABASE={DB_DATABASE};'
             f'UID={DB_USERNAME};'
             f'PWD={DB_PASSWORD};'
-            'TrustServerCertificate=no;'
+            'TrustServerCertificate=yes;'
             'Connection Timeout=30;'
             'Encrypt=yes;'
         )
