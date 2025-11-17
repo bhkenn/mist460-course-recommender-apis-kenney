@@ -9,7 +9,7 @@ def find_current_prerequisites(
     conn = get_db_connection()
 
     cursor = conn.cursor()
-    cursor.execute("{CALL proceFindPrerequisites(?, ?)}", subject_code, course_number)
+    cursor.execute("{CALL procFindPrerequisites(?, ?)}", subject_code, course_number)
     rows = cursor.fetchall()
     cursor.close()
     conn.close()
