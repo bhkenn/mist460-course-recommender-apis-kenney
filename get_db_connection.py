@@ -31,7 +31,7 @@ def get_db_connection():
             'Encrypt=yes;'
         )
     else:        
-        DB_SERVER = "localhost\\SQLSERVER2019"
+        DB_SERVER = "localhost\\BRAXTONS-LAPTOP"
         DB_DATABASE = "MIST460_RelationalDatabase_Lastname;"
 
         connection_string = (
