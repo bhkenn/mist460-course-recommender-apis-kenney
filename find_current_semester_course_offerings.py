@@ -9,7 +9,7 @@ def find_current_semester_course_offerings(
     conn = get_db_connection()
 
     cursor = conn.cursor()
-    cursor.execute("{CALL procFindCurrentSemesterCourseOfferingsForSpecificCourse(?, ?)}", subject_code, course_number)
+    cursor.execute("{CALL procFindCurrentSemesterCourseOfferingsForSpecifiedCourse(?, ?)}", subject_code, course_number)
     rows = cursor.fetchall()
     cursor.close()
     conn.close()
